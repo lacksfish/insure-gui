@@ -60,15 +60,28 @@ How this works:
 * Create the insurance
 * Confirm on your Ledger hardware wallet
 * Save your Insurance as a PDF (Button on the upper left Menu bar)
+* Give your insurance transaction - claimable in a year - to your beneficiary.
+  Alternatively, you can set up a (digital) dead man switch to send them the PDF at some point, for better privacy.
+  A traditional lawyer might also do the trick to hold onto this insurance PDF, as he can not steal the coins. 
 
+### IMPORTANT
 If you're still alive and well before this day, make sure you move your coins - send them to a new address you own - thus invalidating the insurance transaction before it becomes valid
-In the horrible case of death, your beneficiary will have this insurance transaction and will be able to claim the coins
+In the horrible case of death, your beneficiary will have this insurance transaction and will be able to claim the coins once the transaction passes the initial validity date.
 
+## SUPPORTED BITCOIN ADDRESSE FORMATS
+
+This tools supports:
+ * Legacy addresses (p2pkh)
+ * P2SH-segwit addresses (p2sh-p2wpkh)
+ * native segwit addresses (p2wpkh)
+
+ So basically, derivation path purpose 44, 49 and 84.
+ If you're missing a derivation path here, [let me know](https://github.com/lacksfish/insure-gui/issues)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Don't use this tool of you don't understand what it is trying to do.
+Don't use this tool if you don't understand what it is trying to do.
 
 If you want to use it, please give it a test run with testnet coins first.
 
@@ -106,7 +119,9 @@ bc1q6egjrqddw0eq67d997u2jsfz2flh0u6ujq3cwc
 
 ## Screenshot
 
-![Screenshot](https://ipfs.io/ipfs/QmQEgxwH82EBHCBsE9gircimvXCFejAYtUAf1oybng49Nn)
+<!-- ![Screenshot](https://ipfs.io/ipfs/QmQEgxwH82EBHCBsE9gircimvXCFejAYtUAf1oybng49Nn) -->
+
+![Showcase GIF](https://ipfs.io/ipfs/QmXsfH44bfUJgaHVwYEHLQVYBgG5z6yTYKb6fErqhzE6GV)
 
 <!-- ROADMAP -->
 ## Roadmap
